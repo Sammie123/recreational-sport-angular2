@@ -1,0 +1,3 @@
+= [
+  new Team("08/31/2017", "1200", "North Seattle Community College", 10, "Basketball", 1)
+];
