@@ -7,9 +7,36 @@
   background-color: #ffe1ff;
   padding: 15px;
   color: white;
+  text-align: center;
 }
 
 .navbar{
   color: white;
   background-color: #b6fcd5;
+}
+
+.jumbotron {
+  background-image: url("http://sait.usc.edu/recsports/wp-content/uploads/2014/10/2_a_MG_6637.jpg");
+  display: block;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.about {
+  font-family: cursive;
+  text-align: center;
+}
+
+.about2 {
+  text-align: center;
+  font-family: inherit;
+}
+
+.sport {
+  font-family: cursive;
+}
+
+.panel-heading{
+  background-color: #81d4bd;
 }

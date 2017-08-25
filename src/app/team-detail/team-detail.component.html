@@ -1,7 +1,6 @@
-<p>
-  {{(teamToDisplay | async).date}}
-  {{(teamToDisplay | async).time}}
-  {{(teamToDisplay | async).location}}
-  {{(teamToDisplay | async).players}}
-  {{(teamToDisplay | async).sport}}
-</p>
+
+  <h2>Date: {{(teamToDisplay | async).date}}</h2>
+  <h3>Time: {{(teamToDisplay | async).time}}</h3>
+  <h4>Location: {{(teamToDisplay | async).location}}</h4>
+  <h4>Players Need: {{(teamToDisplay | async).player}}</h4>
+  <h4>Sport: {{(teamToDisplay | async).sport}}</h4>

@@ -12,6 +12,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditTeamComponent } from './edit-team/edit-team.component';
+import { FrontpageComponent } from './frontpage/frontpage.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     ListingComponent,
     TeamDetailComponent,
     AdminComponent,
-    EditTeamComponent
+    EditTeamComponent,
+    FrontpageComponent
   ],
   imports: [
     BrowserModule,

@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { ListingComponent } from './listing/listing.component';
 import { TeamDetailComponent } from './team-detail/team-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { FrontpageComponent } from './frontpage/frontpage.component';
+
 
 const appRoutes: Routes = [
-  // {
-  //   path: '',
-  //   component: AppComponent
-  // },
+  {
+    path: '',
+    component: FrontpageComponent
+  },
 
   {
     path: 'about',
