@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Team } from '../team.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listing',
@@ -7,13 +8,15 @@ import { Team } from '../team.model';
   styleUrls: ['./listing.component.css']
 })
 export class ListingComponent implements OnInit {
+  constructor(private router: Router) { }
 
   teams: Team[] = [
-    new Team("08/31/2017", "1200", "North Seattle Community College", 10, "Basketball")
+    new Team("08/31/2017", "1200", "North Seattle Community College", 10, "Basketball", 1)
   ];
 
-
-  constructor() { }
+  goToDetailPage(clickedTeam: Team) {
+    this.router.navigate(['teams', clickedTeam.id]);
+  }
 
   ngOnInit() {
   }

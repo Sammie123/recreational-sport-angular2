@@ -1,6 +1,6 @@
 <h1>Sports Listing</h1>
 
-<div *ngFor="let team of teams" class="panel panel-default">
+<div *ngFor="let team of teams" (click)="goToDetailPage(team)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{team.sport}}</em></h3><br>
     <h4>Location: {{team.location}}</h4><br>
