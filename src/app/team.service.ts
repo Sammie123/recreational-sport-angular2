@@ -23,4 +23,9 @@ export class TeamService {
     return this.database.object('teams/' + teamId);
 
   }
+
+  updateTeam(localUpdatedTeam) {
+    var teamEntryInFirebase = this.getTeamById(localUpdatedTeam.$key);
+    teamEntryInFirebase.update({date: localUpdatedTeam.date, time: localUpdatedTeam.time, location: localUpdatedTeam.location, player: localUpdatedTeam.player, sport: localUpdatedTeam.sport});
+  }
 }

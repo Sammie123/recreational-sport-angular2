@@ -1,0 +1,18 @@
+<h4>Edit Sporting Event</h4>
+
+<label>New Date:</label>
+<input [(ngModel)]="selectedTeam.date">
+
+<label>New Time:</label>
+<input [(ngModel)]="selectedTeam.time">
+
+<label>New Location:</label>
+<input [(ngModel)]="selectedTeam.location">
+
+<label>New Amount of Players Need:</label>
+<input [(ngModel)]="selectedTeam.player">
+
+<label>New Sport:</label>
+<input [(ngModel)]="selectedTeam.sport">
+
+<button (click)="beginUpdatingTeam(selectedTeam)">Update</button>

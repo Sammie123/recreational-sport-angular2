@@ -15,6 +15,7 @@ export class ListingComponent implements OnInit {
   constructor(private router: Router, private teamService: TeamService) { }
 
   teams: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   goToDetailPage(clickedTeam) {
     this.router.navigate(['teams', clickedTeam.$key]);

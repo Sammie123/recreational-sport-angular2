@@ -1,11 +1,15 @@
 <h1>Sports Listing</h1>
 
-<div *ngFor="let team of teams | async" (click)="goToDetailPage(team)" class="panel panel-default">
+<div *ngFor="let team of teams | async" class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{team.sport}}</em></h3>
-    <h4>Location: {{team.location}}</h4>
-    <h4>Date: {{team.date}}</h4>
-    <h4>Time: {{team.time}}</h4>
+    <h3 (click)="goToDetailPage(team)"><em>{{team.sport}}</em></h3>
     <h5>Players Needed: {{team.player}}</h5>
+    <div *ngIf="currentRoute === '/admin'">
+      <h4>Location: {{team.location}}</h4>
+      <h4>Date: {{team.date}}</h4>
+      <h4>Time: {{team.time}}</h4>
+      <hr>
+      <app-edit-team [selectedTeam]="team"></app-edit-team>
+    </div>
   </div>
 </div>
