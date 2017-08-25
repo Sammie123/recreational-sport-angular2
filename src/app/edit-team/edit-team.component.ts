@@ -23,4 +23,10 @@ export class EditTeamComponent implements OnInit {
     this.teamService.updateTeam(teamToUpdate);
   }
 
+  beginDeletingTeam(teamToDelete) {
+    if(confirm("Are you sure you want to delete this event?")){
+      this.teamService.deleteTeam(teamToDelete);
+    }
+  }
+
 }

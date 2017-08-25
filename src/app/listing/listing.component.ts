@@ -25,4 +25,9 @@ export class ListingComponent implements OnInit {
     this.teams = this.teamService.getTeams();
   }
 
+  submitForm(date: string, time: string, location: string, player: number, sport: string) {
+    var newTeam: Team = new Team(date, time, location, player, sport);
+    this.teamService.addTeam(newTeam);
+  }
+
 }

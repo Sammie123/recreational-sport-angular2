@@ -28,4 +28,9 @@ export class TeamService {
     var teamEntryInFirebase = this.getTeamById(localUpdatedTeam.$key);
     teamEntryInFirebase.update({date: localUpdatedTeam.date, time: localUpdatedTeam.time, location: localUpdatedTeam.location, player: localUpdatedTeam.player, sport: localUpdatedTeam.sport});
   }
+
+  deleteTeam(localTeamToDelete) {
+    var teamEntryInFirebase = this.getTeamById(localTeamToDelete.$key);
+    teamEntryInFirebase.remove();
+  }
 }

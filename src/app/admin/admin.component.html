@@ -1,36 +1,3 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h2>New Sport Event</h2>
-  </div>
-  <div class="panel-body">
-    <div>
-      <label>Date:</label>
-      <input #newDate>
-    </div>
-
-    <div>
-      <label>Time:</label>
-      <input #newTime>
-    </div>
-
-    <div>
-      <label>Location:</label>
-      <input #newLocation>
-    </div>
-
-    <div>
-      <label>Players Need:</label>
-      <input #newPlayer>
-    </div>
-
-    <div>
-      <label>Sport:</label>
-      <input #newSport>
-    </div>
-    <button (click)="submitForm(newDate.value, newTime.value, newLocation.value, newPlayer.value, newSport.value); newDate.value=''; newTime.value=''; newLocation.value=''; newPlayer.value=''; newSport.value='' ">Add Event</button>
-  </div>
-</div>
-
 <div>
   <app-listing></app-listing>
 </div>
