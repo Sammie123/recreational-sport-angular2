@@ -1,3 +1,9 @@
-= [
-  new Team("08/31/2017", "1200", "North Seattle Community College", 10, "Basketball", 1)
-];
+{ "teams": [{
+  "date": "08/31/2017",
+  "time": "1200",
+  "location": "North Seattle Community College",
+  "player": "10",
+  "sport": "Basketball",
+  "id": "1"
+  }]
+}

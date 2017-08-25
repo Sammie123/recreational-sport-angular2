@@ -22,6 +22,6 @@ export class TeamDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.teamId = parseInt(urlParameters['id']);
     });
-    this.teamToDisplay = this.teamService.getTeamById(this.teamId);
+    // this.teamToDisplay = this.teamService.getTeamById(this.teamId);
   }
 }
