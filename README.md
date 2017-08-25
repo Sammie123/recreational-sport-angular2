@@ -29,11 +29,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Node.js(with NPM)
 * Angular2 CLl
 
+## Getting API Key
+* Sign-up a free account at Firebase's website
+* Click on 'create a new project'
+  * Name your project and select country
+* Click on 'add firebase to your web app'
+  * Pop-up window that will display api-key information along with other.
+
+
 ## Future Plans:
 * Function that allow members to click join event. Then substract from the amount of players needed.
 * Function that includes a countdown
 * Function that sorts based on event ending soon, type of sport, area of location
-* Proper log-in page for members and admin 
+* Proper log-in page for members and admin
 
 ## Development server
 
