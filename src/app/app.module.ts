@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import { ListingComponent } from './listing/listing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    ListingComponent
   ],
   imports: [
     BrowserModule,

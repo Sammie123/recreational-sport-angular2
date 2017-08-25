@@ -1,0 +1,11 @@
+<h1>Sports Listing</h1>
+
+<div *ngFor="let team of teams" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{team.sport}}</em></h3><br>
+    <h4>Location: {{team.location}}</h4><br>
+    <h4>Date: {{team.date}}</h4><br>
+    <h4>Time: {{team.time}}</h4><br>
+    <h5>Players Needed: {{team.player}}</h5>
+  </div>
+</div>
