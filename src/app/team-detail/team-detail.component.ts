@@ -13,15 +13,15 @@ import { TeamService } from '../team.service';
   providers: [TeamService]
 })
 export class TeamDetailComponent implements OnInit {
-  teamId: number;
-  teamToDisplay: Team;
+  teamId: string;
+  teamToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private teamService: TeamService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.teamId = parseInt(urlParameters['id']);
+      this.teamId = (urlParameters['id']);
     });
-    // this.teamToDisplay = this.teamService.getTeamById(this.teamId);
+    this.teamToDisplay = this.teamService.getTeamById(this.teamId);
   }
 }

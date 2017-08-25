@@ -19,11 +19,8 @@ export class TeamService {
     this.teams.push(newTeam);
   }
 
-  // getTeamById(teamId: number) {
-  //   for (var i = 0; i < teams.length - 1; i++) {
-  //     if (teams[i].id === teamId) {
-  //       return teams[i];
-  //     }
-  //   }
-  // }
+  getTeamById(teamId: string) {
+    return this.database.object('teams/' + teamId);
+
+  }
 }

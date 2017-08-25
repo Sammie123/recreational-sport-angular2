@@ -1,7 +1,7 @@
 <p>
-  {{teamToDisplay.date}}
-  {{teamToDisplay.time}}
-  {{teamToDisplay.location}}
-  {{teamToDisplay.players}}
-  {{teamToDisplay.sport}}
+  {{(teamToDisplay | async).date}}
+  {{(teamToDisplay | async).time}}
+  {{(teamToDisplay | async).location}}
+  {{(teamToDisplay | async).players}}
+  {{(teamToDisplay | async).sport}}
 </p>
